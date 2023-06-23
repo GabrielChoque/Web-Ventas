@@ -1,0 +1,44 @@
+<div class = "show-mobile">
+  <div>
+    <button (click)="toggleMenu()">
+      <img src="../../../assets/img/menu.png" alt="menu" width="50" height="50">
+    </button>
+    <a href="">
+      <img src="../../../assets/img/manzana.png" alt="logo" width="50" height="50">
+    </a>
+    <a href="">
+      <img src="../../../assets/img/shopping-and-commerce.png" alt="logo" width="50" height="50">
+    </a>
+  </div>
+  <div class="side-menu" [class.active] = "activeMenu">
+    <button (click)="toggleMenu()">close</button>
+    <ul>
+      <li><a href="">All</a></li>
+      <li><a href="">Clothes</a></li>
+      <li><a href="">Electronics</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="hide-mobile">
+  <div>
+    <nav>
+      <a href="">
+        <img src="../../../assets/img/manzana.png" alt="logo" width="50" height="50">
+      </a>
+      <ul>
+        <li><a href="">All</a></li>
+        <li><a href="">Clothes</a></li>
+        <li><a href="">Electronics</a></li>
+      </ul>
+    </nav>
+    <div class="info">s
+      <div class="account">Gabriel@gabriel.com</div>
+      <div>
+        <a href="">
+          <img src="../../../assets/img/shopping-and-commerce.png" alt="logo" width="50" height="50">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
